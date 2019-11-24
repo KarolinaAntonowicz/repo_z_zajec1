@@ -10,8 +10,9 @@ namespace Appka_z_pierwszych_zajec
     {
         static void Main(string[] args)
         {
-            while (true)
 
+
+            while (true)
             {
                 Console.WriteLine("1. Dodaj liczby");
                 Console.WriteLine("2. Odejmij liczby");
@@ -19,10 +20,11 @@ namespace Appka_z_pierwszych_zajec
                 Console.WriteLine("4. Dziel  liczby");
                 Console.WriteLine("5. Wyjscie");
                 int menuOption = Convert.ToInt32(Console.ReadLine());
-                if (menuOption == 5)
+                if (menuOption == 6)
                     break;
-                int a = Convert.ToInt32(Console.ReadLine());
             }
+
+            
         }
     }
 }
