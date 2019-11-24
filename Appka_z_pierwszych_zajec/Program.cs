@@ -14,6 +14,7 @@ namespace Appka_z_pierwszych_zajec
             Console.WriteLine("2. Odejmij liczby");
             Console.WriteLine("3. *  liczby");
             Console.WriteLine("4. Dziel  liczby");
+            Console.WriteLine("5. Wyjscie");
         }
     }
 }
