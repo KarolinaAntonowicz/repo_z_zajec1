@@ -1,104 +1,45 @@
+1. wchodzimy do apki co juz mamy ale wcześnie tworzymy repo w gitHub
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
-$ pwd
-/c/Users/studentwsb/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zaj                                                                                ec
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
+2. wykonujemy plecenia z gita
+
 $ git remote add origin https://github.com/KarolinaAntonowicz/repo_z_zajec1.git
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
 $ git push -u origin master
 Enumerating objects: 13, done.
-Counting objects: 100% (13/13), done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (12/12), done.
-Writing objects: 100% (13/13), 5.40 KiB | 1.80 MiB/s, done.
-Total 13 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), done.
 To https://github.com/KarolinaAntonowicz/repo_z_zajec1.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
-$ git add *
+3. robimy zmiany w projekcie
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
+4. dodajemy zmiany i commitujemy
+
+$ git add *
 $ git commit -m "initial  commit"
 
+5. zmianiamy config
+
 *** Please tell me who you are.
-
-Run
-
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
 
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: unable to auto-detect email address (got 'studentwsb@studentwsb.(none)')
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
 $ git config
-usage: git config [<options>]
 
-Config file location
-    --global              use global config file
-    --system              use system config file
-    --local               use repository config file
-    -f, --file <file>     use given config file
-    --blob <blob-id>      read config from given blob object
-
-Action
-    --get                 get value: name [value-regex]
-    --get-all             get all values: key [value-regex]
-    --get-regexp          get values for regexp: name-regex [value-regex]
-    --get-urlmatch        get value specific for the URL: section[.var] URL
-    --replace-all         replace all matching variables: name value [value_rege                                                                                x]
-    --add                 add a new variable: name value
-    --unset               remove a variable: name [value-regex]
-    --unset-all           remove all matches: name [value-regex]
-    --rename-section      rename section: old-name new-name
-    --remove-section      remove a section: name
-    -l, --list            list all
-    -e, --edit            open an editor
-    --get-color           find the color configured: slot [default]
-    --get-colorbool       find the color setting: slot [stdout-is-tty]
-
-Type
-    -t, --type <>         value is given this type
-    --bool                value is "true" or "false"
-    --int                 value is decimal number
-    --bool-or-int         value is --bool or --int
-    --path                value is a path (file or directory name)
-    --expiry-date         value is an expiry date
-
-Other
-    -z, --null            terminate values with NUL byte
-    --name-only           show variable names only
-    --includes            respect include directives on lookup
-    --show-origin         show origin of config (file, standard input, blob, com                                                                                mand line)
-    --default <value>     with --get, use default value when missing entry
-
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
-$ ^C
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
 $ git config --global user.email "you@example.com"
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
 $ git config --global user.email "karola.antonowicz@gmail.com"
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
-$ ^C
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
 $ git config --global user.name "Your Name"
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
 $ git config --global user.name "Karolina"
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
+6. commitujemy
+
 $ git commit -m "initial  commit"
 [master c17992e] initial  commit
  1 file changed, 4 insertions(+)
@@ -111,26 +52,8 @@ Your branch is ahead of 'origin/master' by 1 commit.
 
 nothing to commit, working tree clean
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
-$ git s
-send-email    show          stage         status
-shortlog      show-branch   stash         submodule
+7. robimy zmainy
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
-$ git s
-send-email    show          stage         status
-shortlog      show-branch   stash         submodule
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
-$ git s
-send-email    show          stage         status
-shortlog      show-branch   stash         submodule
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
-$ git sta
-stage    stash    status
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
 $ git status
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.
@@ -145,6 +68,9 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
+
+8. Sprawdzamy co się zmieniło
+
 $ git diff
 diff --git a/Appka_z_pierwszych_zajec/Program.cs b/Appka_z_pierwszych_zajec/Prog                                                                                ram.cs
 index b0fd49d..5688370 100644
@@ -160,24 +86,26 @@ index b0fd49d..5688370 100644
  }
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
+9. Commitujemy zmiany
+
 $ git commit -a -m "add exit option"
 [master bfe5a4e] add exit option
  1 file changed, 1 insertion(+)
+ 
+10. Pushujemy zmiany 
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
 $ git push -u origin master
 Enumerating objects: 11, done.
 Counting objects: 100% (11/11), done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 858 bytes | 858.00 KiB/s, done.
-Total 8 (delta 5), reused 0 (delta 0)
 remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
 To https://github.com/KarolinaAntonowicz/repo_z_zajec1.git
    0af6dc0..bfe5a4e  master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
+
+11.sprawdzamy logi (tam mamy wszystkie commity)
+
 $ git log
 commit bfe5a4e5d1a80f6495bfc777b52ce09da512ec05 (HEAD -> master, origin/master)
 Author: Karolina <karola.antonowicz@gmail.com>
@@ -204,59 +132,22 @@ Date:   Sun Nov 24 05:26:32 2019 +0100
     Add .gitignore and .gitattributes.
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pi                                                                                erwszych_zajec (master)
+
+12. commituje i pushuje zmiany
+
 $ git commit -a -m "add infinity while true to app"
 [master 5a848e6] add infinity while true to app
  1 file changed, 5 insertions(+)
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (master)
+ 
 $ git push -u origin master
-Enumerating objects: 7, done.
-Counting objects: 100% (7/7), done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (4/4), 452 bytes | 452.00 KiB/s, done.
-Total 4 (delta 3), reused 0 (delta 0)
+Enumerating objects: 7, done.)
 remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 To https://github.com/KarolinaAntonowicz/repo_z_zajec1.git
    bfe5a4e..5a848e6  master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (master)
-$ git log
-commit 5a848e6cf62538fa334e1043083967c0faa1bae7 (HEAD -> master, origin/master)
-Author: Karolina <karola.antonowicz@gmail.com>
-Date:   Sun Nov 24 09:08:42 2019 +0100
+13. zamiamieniamy branch na inny np z commita 
 
-    add infinity while true to app
-
-commit bfe5a4e5d1a80f6495bfc777b52ce09da512ec05
-Author: Karolina <karola.antonowicz@gmail.com>
-Date:   Sun Nov 24 05:49:20 2019 +0100
-
-    add exit option
-
-commit c17992e8acd6716dfd87aece43180e4e9514f1b0
-Author: Karolina <karola.antonowicz@gmail.com>
-Date:   Sun Nov 24 05:40:40 2019 +0100
-
-    initial  commit
-
-commit 0af6dc04f29864de351edae1e1f6e3616e5e975d
-Author: studentwsb <studentwsb@STUDENTWSB>
-Date:   Sun Nov 24 05:26:33 2019 +0100
-
-    Add project files.
-
-commit 51b2e32f5d66b71df57af5fc8878881a553ea8b0
-Author: studentwsb <studentwsb@STUDENTWSB>
-Date:   Sun Nov 24 05:26:32 2019 +0100
-
-    Add .gitignore and .gitattributes.
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (master)
-$ ^C
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (master)
 $ git checkout c17992e8acd6716dfd87aece43180e4e9514f1b0
 Note: checking out 'c17992e8acd6716dfd87aece43180e4e9514f1b0'.
 
@@ -272,69 +163,27 @@ do so (now or later) by using -b with the checkout command again. Example:
 HEAD is now at c17992e initial  commit
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec ((c17992e...))
+
+14. przechodzimy na mastera
+
 $ git checkout master
 Previous HEAD position was c17992e initial  commit
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (master)
-$ git checkout -b test_branch
-Switched to a new branch 'test_branch'
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch)
-$ git commit -a -m "Exit option is fixed"
-[test_branch b764429] Exit option is fixed
- 1 file changed, 2 insertions(+)
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch)
-$ git push -u origin master
-Everything up-to-date
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch)
-$ git push -u test_branch
-fatal: 'test_branch' does not appear to be a git repository
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch)
-$ git push
-fatal: The current branch test_branch has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin test_branch
-
-
+15. tworzymy niewgo brancha
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch)
 $ git checkout -b test_branch1
 Switched to a new branch 'test_branch1'
+
+16. commitujemy zmiany 
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch1)
 $ git commit -a -m "change to 6 exit option"
 [test_branch1 e2ba86d] change to 6 exit option
  1 file changed, 1 insertion(+), 1 deletion(-)
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch1)
-$ git push
-fatal: The current branch test_branch1 has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin test_branch1
-
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch1)
-$ git push origin
-fatal: The current branch test_branch1 has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin test_branch1
-
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch1)
-$ git push origin test_branch
-test_branch    test_branch1
+ 
+ 17. push 
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch1)
 $ git push origin test_branch1
@@ -351,18 +200,21 @@ remote:      https://github.com/KarolinaAntonowicz/repo_z_zajec1/pull/new/test_b
 remote:
 To https://github.com/KarolinaAntonowicz/repo_z_zajec1.git
  * [new branch]      test_branch1 -> test_branch1
+ 
+ 18. idziemy na mastera
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch1)
 $ git checkout master
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
 
+19. robimy zmiany na masterze i commitujemy i pushujemy
+
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (master)
 $ git commit -a -m "revolution in code"
 [master 2d32ba1] revolution in code
  1 file changed, 10 insertions(+), 7 deletions(-)
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (master)
 $ git push origin master
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
@@ -374,13 +226,20 @@ remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 To https://github.com/KarolinaAntonowicz/repo_z_zajec1.git
    5a848e6..2d32ba1  master -> master
 
+20. przechodzimy na branch testowy
+
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (master)
 $ git checkout test_branch1
 Switched to branch 'test_branch1'
 
+
+21!!!!! robimy FETCH --all
+
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch1)
 $ git fetch --all
 Fetching origin
+
+22. patrzymy na branche
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch1)
 $ git branch --all
@@ -389,6 +248,8 @@ $ git branch --all
 * test_branch1
   remotes/origin/master
   remotes/origin/test_branch1
+  
+  23.!!!!!! robimy REBASE -i origin/master
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/Appka_z_pierwszych_zajec (test_branch1)
 $ git rebase -i origin/master
@@ -811,35 +672,7 @@ studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierw
 $ Unpacking objects: 100% (4/4), done.
 bash: syntax error near unexpected token `('
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ From https://github.com/szymonsso/moje_pierwsze
-bash: From: command not found
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$  * [new branch]      master     -> upstream/master
-bash: upstream/master: No such file or directory
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (raciczka)
-bash: syntax error near unexpected token `('
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ $ git pranch --all
-bash: $: command not found
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ git: 'pranch' is not a git command. See 'git --help'.
-bash: git:: command not found
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ The most similar command is
-bash: The: command not found
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
 $         branch
@@ -847,22 +680,6 @@ bash: branch: command not found
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
 $
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (raciczka)
-bash: syntax error near unexpected token `('
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ $ git branch --all
-bash: $: command not found
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$   master
-bash: master: command not found
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ * raciczka
-bash: ConsoleApp1ierwsza: command not found
 
 studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
 $   remotes/origin/HEAD -> origin/master
@@ -880,31 +697,3 @@ studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierw
 $   remotes/upstream/master
 bash: remotes/upstream/master: No such file or directory
 
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (raciczka)
-bash: syntax error near unexpected token `('
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ $ git checkout master
-bash: $: command not found
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ Switched to branch 'master'
-bash: Switched: command not found
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ Your branch is up to date with 'origin/master'.
-bash: Your: command not found
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-bash: syntax error near unexpected token `('
-
-studentwsb@studentwsb MINGW64 ~/Documents/visual studio 2015/Projects/moje_pierwsze (master)
-$ ^C
